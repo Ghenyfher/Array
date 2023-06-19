@@ -1,0 +1,55 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+//Dado o Array de inteiros abaixo, ordene-o de tal forma que os números “1” estejam à esquerda.
+//Os itens devem ser modificados no lugar, ou seja, você não ira trocar posições e sim colocar os
+//números “1” no inicio do Array.
+//[2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
+//Given the Array of integers below, order it in such a way that the numbers “1” are on the left.
+//The items must be modified in place, that is, you will not exchange positions, but place the
+//numbers "1" at the beginning of the Array.
+//[2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
+//Os itens devem ser modificados no lugar, ou seja, você não ira trocar posições e sim colocar os
+//números “1” no inicio do Array.
+//[2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
+//Given the Array of integers below, order it in such a way that the numbers “1” are on the left.
+//The items must be modified in place, that is, you will not exchange positions, but place the
+//numbers "1" at the beginning of the Array.
+//[2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
+package com.mycompany.array;
+
+/**
+ *
+ * @author gheny
+ */
+import java.util.Scanner;
+public class Array {
+ 
+    public static void main(String[] args) {
+
+Scanner sc = new Scanner(System.in);
+int ind1 = 0; int ind2 = 0; int number = 0  ; int ac1 = 0 ; int ac2 = 0 ;
+int []Allnumbers1 = new int [15] ;int[] Allnumbers2 = new int [15]; 
+System.out.println(" Write the numbers [2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21] after writhe -1\\n");
+
+while (number != -1) {
+	number = sc.nextInt();
+	if (number == 1 ) {
+	Allnumbers1 [ind1]= number;
+	 ind1 ++;
+         ac1++;
+	} else{ 
+		Allnumbers2 [ind2]= number;
+			ind2 ++;
+                        ac2++;
+	}
+}
+for (int i = 0; i < ac1 ;i++) {
+	System.out.print(Allnumbers1[i]);
+}
+for (int t = 0; t < (ac2-1) ;t++) {
+		System.out.print(Allnumbers2[t]);
+}
+System.out.println();
+}
+}
